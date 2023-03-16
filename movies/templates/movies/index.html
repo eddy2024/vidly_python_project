@@ -16,13 +16,14 @@
                 <tr>
                     
                     <td> 
-                        <a href=" {% url 'movies:detail' movie.id %}">
-                            {{movie.title}}</td>
+                        <a class="text-decoration-none" href=" {% url 'movies:detail' movie.id %}">
+                            {{movie.title}}  </td>
                     <td> {{movie.genre}} </td>
                     <td> {{movie.number_in_stock}} </td>
                     <td> {{movie.daily_rate}} </td>
                 </tr>       
                 {% endfor %}       
             </tbody>
+            
         </table>
 {% endblock  %}
